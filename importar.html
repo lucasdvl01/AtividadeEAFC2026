@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importar Planilha</title>
+</head>
+<body>
+
+<h2>Importar Dados (CSV)</h2>
+
+<form action="importar.php" method="POST" enctype="multipart/form-data">
+
+    <label>Tabela de destino:</label><br>
+    <select name="tabela" required>
+        <option value="USUARIO">USUARIO</option>
+        <option value="IMPORTACAO">IMPORTACAO</option>
+        <option value="TIME">TIME</option>
+        <option value="JOGADOR">JOGADOR</option>
+        <option value="ESTATISTICAS">ESTATISTICAS</option>
+        <option value="PARTIDA">PARTIDA</option>
+        <option value="DESEMPENHO">DESEMPENHO</option>
+    </select><br><br>
+
+    <label>Arquivo CSV:</label><br>
+    <input type="file" name="arquivo" accept=".csv" required><br><br>
+
+    <button type="submit">Importar</button>
+
+</form>
+
+</body>
+</html>
