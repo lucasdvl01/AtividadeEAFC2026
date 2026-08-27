@@ -1,0 +1,38 @@
+# ⚽ EA FC 26 Analytics — Manual Completo de Uso e Instalação
+
+O **EA FC 26 Analytics** é uma plataforma web para gestão, comparação e análise estatística de jogadores do EA FC. O sistema conta com visualização no formato **Bento Grid**, gráficos interativos de radar, comparador de performance, importação em lote via CSV e alternância de tema escuro/claro com persistência.
+
+---
+
+## 🔑 Credenciais de Acesso
+
+O sistema já possui dois perfis predefinidos no banco de dados para testes:
+
+| Nível de Acesso | E-mail | Senha | Permissões |
+| :--- | :--- | :--- | :--- |
+| **Administrador** | `admin@fifadata.com` | `admin@123hash` | Acesso total, importação de CSV e gestão |
+| **Usuário Comum** | `juliana.souza@fifadata.com` | `user@456hash` | Dashboards, perfis, comparadores e rankings |
+
+---
+
+## ⚙️ Pré-requisitos do Sistema
+
+* **Servidor Web:** Apache (via XAMPP, WAMP, Laragon ou similar)
+* **Linguagem:** PHP 8.0 ou superior
+* **Banco de Dados:** MySQL ou MariaDB
+* **Navegador:** Google Chrome, Firefox, Edge ou Safari (com suporte a JavaScript e CSS Grid)
+
+---
+
+## 🚀 Passo a Passo de Instalação
+
+### 1. Mover os Arquivos
+Copie a pasta do projeto para o diretório de hospedagem do seu servidor local:
+* **XAMPP:** `C:\xampp\htdocs\sitefifa\`
+* **WAMP:** `C:\wamp64\www\sitefifa\`
+
+### 2. Configurar o Banco de Dados (MySQL)
+1. Abra o **phpMyAdmin** (`http://localhost/phpmyadmin`).
+2. Vá em **Bancos de dados** e crie um banco com o nome exato: `fifadados`.
+3. Selecione o banco `fifadados` e abra a aba **SQL**.
+4. Execute o script inicial para criar a estrutura e adicione as colunas de subestatísticas necessárias com o comando:
